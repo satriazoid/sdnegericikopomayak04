@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/Lambang_Kabupaten_Bogor.png">
-    <title>SD N CIKOPOMAYAK 04</title>
+    <title>SDN Cikopomayak 04 | Cerdas, Berkarakter, Berprestasi</title>
+    <!-- Gunakan Google Fonts (Inter) untuk tampilan profesional dan minimalis -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
 
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
             <!-- LOGO -->
-            <a href="#beranda" class="logo-box">
-                <img src="images/Lambang_Kabupaten_Bogor.png" class="logo-img">
-                <span class="logo-text">SD N CIKOPOMAYAK 04</span>
+            <a href="#" class="logo-box">
+                <img src="images/Lambang_Kabupaten_Bogor.png" alt="Logo Kabupaten Bogor" class="logo-img">
+                <span class="logo-text">SDN CIKOPOMAYAK 04</span>
             </a>
 
             <!-- MENU (Desktop) -->
             <ul class="nav-links">
                 <li><a href="#beranda">Beranda</a></li>
-                <li><a href="#tentang-kami">Tentang</a></li>
-                <li><a href="#prestasi-sekolah">Prestasi</a></li>
+                <li><a href="#tentang-kami">Tentang Kami</a></li>
                 <li><a href="#Ekstrakurikuler">Ekstrakurikuler</a></li>
+                <li><a href="#prestasi-sekolah">Prestasi</a></li>
                 <li><a href="#layanan-title">Layanan</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
 
-            <!-- HAMBURGER -->
+            <!-- HAMBURGER (Mobile) -->
             <div class="menu-btn" id="menuBtn">
                 <span></span>
                 <span></span>
@@ -39,236 +43,255 @@
 
         <!-- MENU MOBILE -->
         <div class="mobile-nav" id="mobileNav">
-            <li><a href="#beranda">Beranda</a></li>
-            <li><a href="#tentang-kami">Tentang</a></li>
-            <li><a href="#prestasi-sekolah">Prestasi</a></li>
-            <li><a href="#Ekstrakurikuler">Ekstrakurikuler</a></li>
-            <li><a href="#layanan-title">Layanan</a></li>
-            <li><a href="#contact">Kontak</a></li>
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang-kami">Tentang Kami</a>
+            <a href="#Ekstrakurikuler">Ekstrakurikuler</a>
+            <a href="#prestasi-sekolah">Prestasi</a>
+            <a href="#layanan-title">Layanan</a>
+            <a href="#contact">Kontak</a>
         </div>
     </nav>
 
-
+    <!-- Hero Section -->
     <section id="beranda" class="hero">
-        <div class="hero-content">
-            <h1 class="title-1">SD N CIKOPOMAYAK 04</h1>
-            <h4>SEKOLAH DASAR NEGERI KABUPATEN BOGOR</h4>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="title-1">SDN Cikopomayak 04</h1>
+            <h4 class="subtitle">Sekolah Dasar Negeri, Kabupaten Bogor</h4>
+            <p class="hero-desc">Berdedikasi dalam membentuk generasi muda yang cerdas, berkarakter mulia, serta
+                membekali dengan kecakapan literasi digital dalam lingkungan belajar yang inklusif.</p>
             <div class="cta-buttons">
-                <a href="#tentang-kami" class="cta-primary">Detail</a>
+                <a href="#tentang-kami" class="cta-primary">Profil Sekolah</a>
+                <a href="#contact" class="cta-secondary">Hubungi Kami</a>
             </div>
         </div>
     </section>
 
-    <section id="tentang-kami" class="fade-in">
+    <!-- Tentang Kami -->
+    <section id="tentang-kami" class="fade-in section-light">
         <div class="container">
             <div class="section-header">
-                <h1 class="section-title">Tentang Sekolah</h1>
+                <h2 class="section-title">Program & Profil Kami</h2>
+                <p class="section-subtitle">Memadukan inovasi, kolaborasi, dan dedikasi penuh untuk kemajuan pendidikan
+                    anak bangsa.</p>
             </div>
 
             <div class="about-content">
-                <div class="about-intro" style="flex-direction: column; text-align: center;">
-                    <div class="about-image">
-                        <img src="images/poto-bersama.jpg" alt="Foto Bersama">
-                    </div>
-
-                    <div class="about-text" style="text-align: center; max-width: 700px;">
-                        <h3>SD N Cikopomayak 04</h3>
+                <div class="about-intro">
+                    <div class="about-image"></div>
+                    <div class="about-text">
+                        <h3>Mengenal SDN Cikopomayak 04</h3>
                         <p>
-                            SD N Cikopomayak 04 adalah sekolah dasar yang terus berkembang melalui kreativitas,
-                            kolaborasi,
-                            serta komitmen kuat dalam mencerdaskan generasi muda. Kami percaya bahwa lingkungan belajar
-                            yang nyaman, aman, dan inspiratif akan membantu peserta didik tumbuh menjadi pribadi yang
-                            unggul dan berkarakter.
+                            Berpusat di wilayah Jasinga, Kabupaten Bogor, SDN Cikopomayak 04 dipimpin oleh <strong>Ibu
+                                Yanti Nuryanti, S.Pd.SD</strong> selaku Kepala Sekolah.
+                            Kehangatan dan harmonisasi dalam tim pendidik menjadi pondasi penting bagi sekolah ini. Kami
+                            meyakini bahwa lingkungan yang sinergis antarguru merupakan faktor utama keberhasilan proses
+                            belajar-mengajar. Oleh sebab itu, setiap perkembangan di sekolah merupakan hasil dari
+                            dedikasi dan gotong royong seluruh elemen tenaga pengajar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="card-icon">🎯</div>
+                        <h4>Misi Kami</h4>
+                        <p>
+                            "Mewujudkan peserta didik yang berkarakter, berprestasi, kreatif, serta memiliki kemampuan
+                            literasi
+                            teknologi dalam lingkungan belajar yang aman, ramah anak, inklusif, dan berbudaya kearifan
+                            lokal."
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon">💡</div>
+                        <h4>Visi Sekolah</h4>
+                        <p>
+                            SDN Cikopomayak 04 bertekad menjadi sekolah dasar yang adaptif terhadap dinamika digital,
+                            memperkuat keahlian literasi peserta didik, serta senantiasa menciptakan ruang kelas modern
+                            dengan tetap mengedepankan nilai adat dan etika moral.
                         </p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="about-cards">
-                <div class="about-card">
-                    <h4>🎯 Misi</h4>
-                    <p>1. Membangun kebiasaan tertib beribadah, kajian keagamaan rutin dan 55 (Senyum, sapa, salam,
-                        santun dan supan)</p>
-                    <p>2. Menyelenggarakan pelatihan PM bagi guru dan KS untuk menunjang pembelajaran intrakurikuler
-                        dalam meningkatkan kecerdasan peserta didik dengan pendekatan kerangka pembelajaran mendalam
-                        (deep learning).</p>
-                    <p>3. Mengembangkan kegiatan kokurikuler dengan program "Koalisi Duha di Cimapat" yaitu kegiatan
-                        olahraga, literasi numerasi dan sholat duha di SD N Cikopomayak 04</p>
-                    <p>4. Memfasilitasi kegiatan ekstrakurikuler sesuai bakat dan minat untuk menunjang prestasi peserta
-                        didik (Pramuka, tari, nyanyi, degung, footsal, Matematika) ditingkat kecamatan Jasinga dan
-                        Kabupaten Bogor.</p>
+    <!-- Ekstrakurikuler -->
+    <section id="Ekstrakurikuler" class="fade-in section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Program Ekstrakurikuler</h2>
+                <p class="section-subtitle">Sarana pengembangan bakat, pembentukan karakter mandiri, dan penyaluran
+                    minat peserta didik secara positif.</p>
+            </div>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">⚽</div>
+                    <h4>Sepak Bola</h4>
+                    <p>Membentuk kemampuan motorik, kemahiran kerja tim, serta memupuk jiwa sportivitas. Melalui
+                        pembinaan dan latihan terarah, siswa didorong untuk memahami dasar teknik bermain serta
+                        menerapkan strategi secara kolektif di lapangan.</p>
                 </div>
 
-                <div class="about-card">
-                    <h4>💡 Tujuan</h4>
-                    <p>1 Terwujudnya peserta didik yang berakhlak mula melalui pelaksanaan budaya tertib beribadah dan
-                        gerakan 55 (Senyum, Sapa, Salam, Santun dan Sopan) di tahun pelajaran 2025-2026.</p>
-                    <p>2. Terpenuhinya kebutuhan belajar intrakurikuler peserta didik melalui pendekatan kerangka
-                        pembelajaran mendalam (deep learning), dan kokurikuler dalam program kegiatan "Koalisi Duha di
-                        Cimapat" yaitu kegiatan olahraga, literasi numerasi dan sholat duha di SD N Cikopomayak 04,
-                        untuk mencapai delapan dimensi profil lulusan di tahun pelajaran 2025-2026</p>
-                    <p>3. Terselenggaranya kegiatan ekstrakurikuler yang menunjang prestasi peserta didik pada kegiatan
-                        OSN, FLS3N, dan O2SN di tingkat kecamatan Jasinga di tahun pelajaran 2025-2026</p>
+                <div class="feature-card">
+                    <div class="feature-icon">💃</div>
+                    <h4>Seni Tari</h4>
+                    <p>Berfokus pada pengenalan dan pelestarian seni tari tradisional sebagai benteng budaya nusantara.
+                        Melalui olah gerak dan ritme, program ini melatih kreativitas, keluwesan fisik, hingga rasa
+                        percaya diri di hadapan publik.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🥁</div>
+                    <h4>Degungan</h4>
+                    <p>Seni instrumen tradisional khas Sunda, degungan memberikan wadah apresiasi budaya lokal kepada
+                        siswa. Pembelajaran melingkupi metode harmoni nada ansambel hingga teknik perkusi, membangun
+                        kebanggaan terhadap peninggalan leluhur.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚜️</div>
+                    <h4>Pramuka</h4>
+                    <p>Ekskul wajib yang menjadi inti dari pendewasaan mental mandiri dan budi pekerti kepanduan.
+                        Program baris-berbaris, teknik tali-temali, serta pelatihan kepemimpinan diselenggarakan untuk
+                        mempersiapkan siswa sebagai agen perintis masyarakat.</p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Prestasi Sekolah -->
+    <section id="prestasi-sekolah" class="fade-in section-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pencapaian Prestasi</h2>
+                <p class="section-subtitle">Sebuah bentuk nyata dari kualitas pengajaran dan kompetensi didik yang
+                    unggul pada berbagai tingkatan.</p>
+            </div>
+
+            <div class="achievement-cards">
+                <div class="achievement-card">
+                    <div class="achievement-badge">🏆</div>
+                    <h4>Juara 1 Berprestasi</h4>
+                    <p>Tumbuhnya kecakapan akademis dan kebudayaan dibuktikan dari berbagai perolehan juara dalam
+                        partisipasi lomba keahlian antarsekolah, mewujudkan integritas visi misi yang telah dibina.</p>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-badge">🥈</div>
+                    <h4>Juara 2 Adaptasi Digital</h4>
+                    <p>Pencapaian deduktif dalam kemampuan presentasi digital dan inovasi teknologi bagi siswa. Kami
+                        menjadikan penghargaan ini landasan dasar bagi peningkatan infrastruktur sarana edukatif
+                        selanjutnya.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="prestasi-sekolah" class="fade-in">
+    <!-- Layanan -->
+    <section id="layanan-title" class="fade-in section-white">
         <div class="container">
             <div class="section-header">
-                <h1 class="section-title">Prestasi Sekolah</h1>
-                <p class="section-subtitle">Pencapaian siswa dan sekolah dalam berbagai bidang.</p>
-            </div>
-            <div class="about-card">
-                <h4>🥈 Juara 2 Lomba Pantomim</h4>
-                <p>Siswa-siswi SDN Cikopomayak 04 berhasil meraih Juara 2 dalam lomba Pantomim tingkat kecamatan. Dengan
-                    kemampuan ekspresi yang kuat, kreativitas gerakan, serta kekompakan yang terjaga, tim pantomim
-                    tampil memukau dan mampu bersaing dengan peserta lain. Prestasi ini menjadi bukti bahwa siswa
-                    memiliki bakat seni yang luar biasa dan mampu mengembangkan potensi di bidang non-akademik.</p>
+                <h2 class="section-title">Pusat Layanan</h2>
+                <p class="section-subtitle">Kemudahan pelaporan keluhan serta distribusi akses informasi publik seputar
+                    kawasan pendidikan sekolah kami.</p>
             </div>
 
-            <div class="about-card">
-                <h4>🥈 Juara 2 MTQ (Musabaqah Tilawatil Qur’an)</h4>
-                <p>Dalam ajang MTQ tingkat kecamatan, salah satu siswa SDN Cikopomayak 04 sukses meraih Juara 2.
-                    Penilaian ini diperoleh berkat kemampuan membaca Al-Qur’an yang baik, penguasaan tajwid, serta
-                    penghayatan ayat-ayat yang dilantunkan. Prestasi ini menjadi kebanggaan bagi sekolah dan diharapkan
-                    mampu mendorong siswa lain untuk terus mencintai dan mempelajari Al-Qur’an.</p>
-            </div>
-
-            <div class="about-card">
-                <h4>🥉 Juara 3 Tarian Tradisional</h4>
-                <p>Tim Tari SDN Cikopomayak 04 berhasil meraih Juara 3 dalam lomba Tarian Tradisional. Penampilan yang
-                    penuh semangat, harmonis, serta mencerminkan nilai budaya daerah membuat tim ini mendapat apresiasi
-                    dari para juri. Keberhasilan ini menjadi bukti bahwa siswa-siswi sekolah mampu berprestasi dalam
-                    bidang seni sekaligus melestarikan kekayaan budaya Indonesia.</p>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section id="Ekstrakurikuler" class="fade-in">
-        <div class="container">
-            <div class="section-header">
-                <h1 class="section-title">Ekstrakurikuler</h1>
-                <p class="section-subtitle">Kegiatan penunjang untuk mengembangkan minat, bakat, dan karakter siswa.</p>
-            </div>
-            <div class="about-card">
-                <h4>⚽Sepak Bola</h4>
-                <p>Ekstrakurikuler sepak bola bertujuan mengembangkan kemampuan fisik, kerja sama tim, serta sportivitas
-                    siswa. Melalui latihan rutin, siswa dibimbing untuk memahami teknik dasar seperti passing,
-                    dribbling, shooting, serta strategi permainan. Kegiatan ini juga melatih disiplin dan daya tahan
-                    tubuh, serta menjadi sarana positif untuk menyalurkan minat olahraga siswa.</p>
-            </div>
-
-            <div class="about-card">
-                <h4>💃Tari</h4>
-                <p>Ekstrakurikuler tari difokuskan pada pelestarian seni budaya tradisional sekaligus pengembangan
-                    kreativitas. Siswa belajar gerakan dasar tari daerah, tata ritme, hingga koreografi sederhana.
-                    Program ini meningkatkan kepercayaan diri, keluwesan tubuh, serta kecintaan terhadap budaya
-                    Indonesia. Tari juga sering ditampilkan pada acara sekolah sebagai bentuk apresiasi seni.</p>
-            </div>
-
-            <div class="about-card">
-                <h4>🥁Degungan</h4>
-                <p>Degungan merupakan seni musik tradisional Sunda yang dimainkan menggunakan instrumen perkusi khas.
-                    Melalui ekstrakurikuler ini, siswa diperkenalkan pada budaya lokal, teknik dasar memainkan alat
-                    musik degung, serta latihan harmoni kelompok. Kegiatan ini membantu menumbuhkan kecintaan pada seni
-                    tradisional dan memperkuat identitas budaya daerah.</p>
-            </div>
-
-            <div class="about-card">
-                <h4>⚜Pramuka</h4>
-                <p>Kegiatan pramuka menjadi wadah pembentukan karakter dan kedisiplinan. Siswa mengikuti berbagai
-                    aktivitas seperti baris berbaris, tali-temali, penjelajahan, permainan edukatif, hingga latihan
-                    kepemimpinan. Program ini menanamkan nilai mandiri, kerja sama, tanggung jawab, serta jiwa sosial,
-                    sesuai dengan tujuan Gerakan Pramuka.</p>
-            </div>
-        </div>
-        </div>
-        </div>
-    </section>
-
-    <section id="layanan-title" class="fade-in">
-        <div class="container">
-            <div class="section-header">
-                <h1 class="section-title">Layanan</h1>
-                <p class="section-subtitle">Layanan informasi dan dukungan bagi warga sekolah dan masyarakat.</p>
-            </div>
-
-            <div class="portfolio-grid">
-
-                <!-- CARD 1 - Informasi Sekolah -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image layanan"></div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Informasi Sekolah</h3>
-                        <p class="portfolio-description">
-                            Informasi lengkap mengenai sekolah, program, fasilitas, dan kegiatan belajar mengajar.
+            <div class="service-grid">
+                <!-- Layanan 1 - Informasi -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <div class="service-image info-image"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Informasi</h3>
+                        <p class="service-description">
+                            Akses sumber informasi faktual menyangkut struktur program, ragam fasilitas penunjang
+                            belajar, hingga rentetan agenda aktivitas sekolah terbaru, disajikan terkini untuk para
+                            orangtua.
                         </p>
-
-                        <div class="btn-wrapper">
-                            <a href="https://www.instagram.com/sdn_cikopomayak04/" class="instagram-btn">Instagram</a>
+                        <div class="service-actions">
+                            <a href="#" class="btn-outline-primary">Ikuti Instagram</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- CARD 2 - Layanan Pengaduan -->
-                <div class="portfolio-card">
-                    <div class="portfolio-image laporan"></div>
-                    <div class="portfolio-content">
-                        <h3 class="portfolio-title">Layanan Pengaduan</h3>
-                        <p class="portfolio-description">
-                            Hubungi kami untuk menyampaikan keluhan, masukan, atau laporan terkait layanan sekolah.
+                <!-- Layanan 2 - Pengaduan -->
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <div class="service-image help-image"></div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Pengaduan</h3>
+                        <p class="service-description">
+                            Saluran terpadu yang disediakan khusus bagi wali murid serta publik untuk menyuarakan
+                            aspirasi, evaluasi layanan edukasi, serta pelaporan kejadian insidentil dengan tindak lanjut
+                            responsif.
                         </p>
-                        <div class="btn-wrapper">
-                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sdncikopomayak04@gmail.com"
-                                target="_blank" class="email-btn">Kirim Pengaduan</a>
+                        <div class="service-actions">
+                            <a href="#" class="btn-primary">Kirim Email</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-    <section id="contact" class="fade-in">
+    <!-- Kontak -->
+    <section id="contact" class="fade-in section-light">
         <div class="container">
             <div class="section-header">
-                <h1 class="section-title">Kontak</h1>
-                <p class="section-subtitle">Hubungi kami untuk informasi lebih lanjut atau kebutuhan komunikasi lainnya.
-                </p>
+                <h2 class="section-title">Hubungi Kami</h2>
+                <p class="section-subtitle">Silakan melayangkan permohonan surat melalui formulir daring di bawah ini
+                    atau kunjungi alamat tertera.</p>
             </div>
 
-            <div class="contact-content">
+            <div class="contact-layout">
                 <div class="contact-info">
-                    <h3>Lokasi</h3>
+                    <h3>Peta Lokasi Institusi</h3>
+                    <p>Kunjungan pada jam operasional kami sangat diterima. Kami berada di wilayah yang asri dan aman
+                        bagi proses tumbuh kembang anak.</p>
                     <div class="map-container">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d803.7202416322364!2d106.45767827713556!3d-6.455896325033127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1763590052214!5m2!1sid!2sid"
-                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+                            width="100%" height="250" style="border:0; border-radius: 12px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                     <div class="contact-details">
-                        <h4>📍 Based in:</h4>
-                        <p>Cikopomayak Kec. Jasinga Kabupaten Bogor Jawa Barat</p>
+                        <div class="contact-item">
+                            <span class="icon-contact">📍</span>
+                            <div>
+                                <strong>Alamat Resmi:</strong>
+                                <span>Cikopomayak, Kec. Jasinga, Kabupaten Bogor, Jawa Barat</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="contact-form-container">
                     <form class="contact-form">
+                        <h3 class="form-title">Tinggalkan Pesan</h3>
                         <div class="form-group">
-                            <input type="text" class="form-input" placeholder="Nama kamu" required>
+                            <label for="nama_lengkap">Nama Lengkap</label>
+                            <input type="text" id="nama_lengkap" class="form-input" placeholder="Masukkan nama Anda"
+                                required>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-input" placeholder="Email kamu" required>
+                            <label for="email_anda">Alamat Surel (Email)</label>
+                            <input type="email" id="email_anda" class="form-input" placeholder="contoh@gmail.com"
+                                required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-textarea" rows="5"
-                                placeholder="Jelaskan secara singkat informasi/keluhan yang ingin anda kirim kan"
+                            <label for="pesan_anda">Rincian Keluhan/Aspirasi</label>
+                            <textarea id="pesan_anda" class="form-textarea" rows="5"
+                                placeholder="Sampaikan penjelasan pesan Anda di sini secara rinci..."
                                 required></textarea>
                         </div>
-                        <button type="button" class="submit-btn" onclick="sendEmail()">Send Message</button>
+                        <button type="submit" class="btn-primary w-100">Kirim Pesan Sekarang</button>
                     </form>
                 </div>
             </div>

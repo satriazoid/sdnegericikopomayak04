@@ -17,45 +17,16 @@ menuBtn.addEventListener("click", () => {
 
 
 // Close mobile menu when clicking on links
-document.querySelectorAll('.mobile-nav a').forEach(function (link) {
-    link.addEventListener('click', function () {
+document.querySelectorAll('.mobile-nav a').forEach(function(link) {
+    link.addEventListener('click', function() {
         mobileMenuBtn.classList.remove('active');
         mobileNav.classList.remove('active');
     });
 });
 
-<<<<<<< HEAD
-function sendEmail() {
-    const name = document.querySelector('.contact-form input[type="text"]').value;
-    const email = document.querySelector('.contact-form input[type="email"]').value;
-    const message = document.querySelector('.contact-form textarea').value;
-
-    // Cek jika kosong
-    if (!name || !email || !message) {
-        alert("Harap isi semua kolom sebelum mengirim.");
-        return;
-    }
-
-    // Format Gmail Compose
-    const gmailUrl =
-        "https://mail.google.com/mail/?view=cm&fs=1" +
-        "&to=sdncikopomayak04@gmail.com" +
-        "&su=" + encodeURIComponent("Pesan Baru dari " + name) +
-        "&body=" + encodeURIComponent(
-            "Nama: " + name + "\n" +
-            "Email: " + email + "\n\n" +
-            "Pesan:\n" + message
-        );
-
-    // Buka Gmail
-    window.open(gmailUrl, "_blank");
-}
-
-=======
->>>>>>> master
 // Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-    anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -68,7 +39,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
 });
 
 // Navbar scroll effect
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');
     if (window.scrollY > 100) {
         navbar.classList.add('scrolled');
@@ -83,15 +54,15 @@ const observerOptions = {
     rootMargin: '0px 0px -100px 0px'
 };
 
-const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
         }
     });
 }, observerOptions);
 
-document.querySelectorAll('.fade-in').forEach(function (el) {
+document.querySelectorAll('.fade-in').forEach(function(el) {
     observer.observe(el);
 });
 
@@ -111,7 +82,7 @@ function updateActiveMenuItem() {
             // Remove active class from all menu items
             document.querySelectorAll('.nav-links a').forEach(item => item.classList.remove('active'));
             document.querySelectorAll('.mobile-nav a').forEach(item => item.classList.remove('active'));
-
+            
             // Add active class to current menu item
             if (menuItem) menuItem.classList.add('active');
             if (mobileMenuItem) mobileMenuItem.classList.add('active');
@@ -130,27 +101,27 @@ function initTimeline() {
     const timelineItems = document.querySelectorAll('.timeline-item');
     const timelineProgress = document.querySelector('.timeline-progress');
     const timelineFilters = document.querySelectorAll('.timeline-filter');
-
+    
     // Timeline scroll progress
     function updateTimelineProgress() {
         const timelineContainer = document.querySelector('.timeline-container');
         const containerRect = timelineContainer.getBoundingClientRect();
         const windowHeight = window.innerHeight;
-
+        
         if (containerRect.top < windowHeight && containerRect.bottom > 0) {
-            const progress = Math.max(0, Math.min(1,
+            const progress = Math.max(0, Math.min(1, 
                 (windowHeight - containerRect.top) / (containerRect.height + windowHeight)
             ));
             timelineProgress.style.height = `${progress * 100}%`;
         }
     }
-
+    
     // Timeline item visibility
     function updateTimelineItems() {
         timelineItems.forEach((item, index) => {
             const rect = item.getBoundingClientRect();
             const isVisible = rect.top < window.innerHeight * 0.8;
-
+            
             if (isVisible && !item.classList.contains('visible')) {
                 setTimeout(() => {
                     item.classList.add('visible');
@@ -158,16 +129,16 @@ function initTimeline() {
             }
         });
     }
-
+    
     // Timeline filtering
     timelineFilters.forEach(filter => {
-        filter.addEventListener('click', function () {
+        filter.addEventListener('click', function() {
             const filterValue = this.getAttribute('data-filter');
-
+            
             // Update active filter
             timelineFilters.forEach(f => f.classList.remove('active'));
             this.classList.add('active');
-
+            
             // Filter timeline items
             timelineItems.forEach(item => {
                 const category = item.getAttribute('data-category');
@@ -187,15 +158,15 @@ function initTimeline() {
             });
         });
     });
-
+    
     // Timeline node interactions
     document.querySelectorAll('.timeline-node').forEach(node => {
-        node.addEventListener('click', function () {
+        node.addEventListener('click', function() {
             // Remove active class from all nodes
             document.querySelectorAll('.timeline-node').forEach(n => n.classList.remove('active'));
             // Add active class to clicked node
             this.classList.add('active');
-
+            
             // Smooth scroll to the timeline item
             const timelineItem = this.closest('.timeline-item');
             timelineItem.scrollIntoView({
@@ -204,13 +175,13 @@ function initTimeline() {
             });
         });
     });
-
+    
     // Listen for scroll events
     window.addEventListener('scroll', () => {
         updateTimelineProgress();
         updateTimelineItems();
     });
-
+    
     // Initial calls
     updateTimelineProgress();
     updateTimelineItems();
